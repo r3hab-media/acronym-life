@@ -1,0 +1,106 @@
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox and IE */
+html {
+  /* remove scrollbar from Firefox */
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightcoral;
+  font-family: 'Roboto', sans-serif;
+  
+  height: 100vh;
+  position: relative;
+  padding-bottom: 2rem;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+
+  span {
+    &:first-child {
+      color: yellow;
+    }
+
+    &:nth-child(2) {
+      font-weight: 800;      
+    }
+  }
+}
+
+.form {
+  background-color: coral;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+  max-width: 80%;
+  overflow: hidden;  
+  
+  input {
+    border: 0;
+    background-color: coral;
+    border-bottom: 2px solid gray;
+    font-size: 1.5rem;
+    max-width: 100%;
+    
+    &:focus, &:focus-visible {
+      outline: 0;
+    }
+  }
+
+  h4 span {
+    display: block;
+    padding: 5px 10px;
+    margin-top: 1rem;
+  }
+
+  .error {
+    background-color: red;
+    color: white;
+  }
+
+  .success {
+    background-color: green;
+    color: white;
+  }
+}
+
+footer {
+  background: lightslategray;
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2rem;
+  
+  a {
+    text-decoration: none;
+    font-weight: 800;
+  }
+}
