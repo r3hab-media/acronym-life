@@ -220,6 +220,10 @@ const shortCodes = [
     long: `drug of choice`
   },
   {
+    short: `ngl`,
+    long: `not gonna lie`
+  },
+  {
     //business abbreviations
     short: `eod`,
     long: `end of day`
@@ -317,4 +321,5 @@ const lookup = shortCodes.reduce((a, e) => {
   return a;
 }, {});
 
+//check console for any duplicates
 console.log(shortCodes.filter(e => lookup[e.short]));
